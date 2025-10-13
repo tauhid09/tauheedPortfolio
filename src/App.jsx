@@ -26,7 +26,7 @@ function App() {
         onToggleTheme={toggleTheme}
         onScrollToSection={scrollToSection}
       />
-      <div className='bg-black' >
+      <div>
         <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
           <LiquidEther
             theme={theme}

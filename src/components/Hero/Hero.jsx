@@ -6,7 +6,7 @@ export function Hero({ theme, colors, onScrollToSection }) {
       id="home"
       className="min-h-screen flex items-center justify-center relative bg-transparent"
     >
-      <div className="absolute inset-0 bg-black"></div>
+      <div className="absolute inset-0"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
