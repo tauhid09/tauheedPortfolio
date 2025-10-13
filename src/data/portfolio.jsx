@@ -12,7 +12,7 @@ export const projects = [
 		description: 'This modern portfolio combines a stunning fluid background with a minimalist layout and bold typography to create a powerful, professional impression.',
 		tech: ['ReactJs', 'JavaScript', 'Tailwind CSS'],
 		image: portfolio,
-		link: '',
+		link: 'https://tauheed-portfolio.vercel.app/',
 		github: 'https://github.com/tauhid09/tauheedPortfolio' // add github link
 	},
 	{
