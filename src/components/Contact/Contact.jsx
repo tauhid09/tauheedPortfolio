@@ -5,7 +5,7 @@ export function Contact({ theme, colors }) {
     <section id="contact" className={`py-20 transition-colors duration-300 ${
       theme === 'dark' ? 'bg-slate-800' : 'bg-white'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" xl:h-[55vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
           <h2 className={`text-4xl font-bold mb-4 ${
             theme === 'dark' ? 'text-white' : 'text-slate-900'

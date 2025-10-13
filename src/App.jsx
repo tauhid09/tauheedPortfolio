@@ -7,6 +7,7 @@ import { Footer } from './components/Footer/Footer';
 import { useTheme, useScrollAnimation } from './hooks';
 import { colorThemes, projects, certificates } from './data';
 import LiquidEther from './components/Hero/LiquidEnter';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const { theme, colorTheme, toggleTheme } = useTheme();
