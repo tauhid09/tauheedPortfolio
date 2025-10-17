@@ -22,6 +22,31 @@ export const colorThemes = {
     },
     name: 'Blue'
   },
+
+  black: {
+    light: {
+      primary: 'bg-black',
+      hover: 'hover:bg-gray-900',
+      text: 'text-black',
+      hoverGithub: 'hover:text-gray-800',
+      hoverlinkedin: 'hover:text-black',
+      hovermail: 'hover:text-red-600',
+      border: 'border-black',
+      ring: 'focus:ring-gray-800',
+      tag: 'bg-gray-100 text-gray-900',
+      darkTag: 'bg-gray-900/50 text-gray-300',
+      darkPrimary: 'bg-gray-800',
+      darkHover: 'hover:bg-gray-700',
+      darkText: 'text-gray-300',
+      hoverdarkGithub: 'hover:text-white',
+      hoverdarklinkedin: 'hover:text-gray-300',
+      hoverdarkmail: 'hover:text-red-600',
+      darkHoverText: 'hover:text-gray-200',
+      darkRing: 'focus:ring-gray-600'
+    },
+    name: 'Black'
+  },
+
   red: {
     light: {
       primary: 'bg-red-600',

@@ -33,7 +33,7 @@ function App() {
             colors={
               theme === 'dark'
                 ? ['#FFFFFF', '#87FCFF', '#87FCFF'] // dark theme colors
-                : ['#949494', '#949494', '#696969'] // light theme colors
+                : ['#c7c5c5', '#c7c5c5', '#c7c5c5'] // light theme colors
             }
             mouseForce={20}
             cursorSize={100}
