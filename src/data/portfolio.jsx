@@ -6,6 +6,20 @@ import metaCert from './images/meta-cert.png';
 import udemyCert from './images/udemy-cert.png';
 import fccCert from './images/fcc-cert.png';
 
+export const education = [
+	{
+		year:'2020-21',
+		title: 'High School(10th)',
+		school:'DLW Inter College, Varanasi',
+	},
+
+	{
+		year:'2022-23',
+		title:'Intermediate(12th)',
+		school:'DLW Inter College, Varanasi',
+	},
+]
+
 export const projects = [
 	{
 		title: 'Personal Portfolio',

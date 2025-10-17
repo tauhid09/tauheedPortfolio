@@ -1,5 +1,6 @@
 import { ProjectCard } from './ProjectCard';
 import { CertificateCard } from './CertificateCard';
+// import {Education} from './Eduction';
 
 export function Highlights({ theme, colors, projects, certificates }) {
   return (
