@@ -34,28 +34,38 @@ export function About({ theme, colors }) {
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-50'
+              <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
                 }`}>
                 <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
-                  }`}>Skills</h3>
+                  }`}>LANGUAGE</h3>
                 <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
                   }`}>
-                  <li>React</li>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>JAVA</li>
+                </ul>
+              </div>
+              <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
+                }`}>
+                <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+                  }`}>SKILLS</h3>
+                <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
+                  }`}>
+                  <li>ReactJS</li>
                   <li>HTML5 & CSS3</li>
                   <li>Tailwind CSS</li>
                   <li>JavaScript ES6+</li>
                 </ul>
               </div>
-              <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-50'
+              <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
                 }`}>
                 <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
-                  }`}>Tools</h3>
+                  }`}>TOOLS</h3>
                 <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
                   }`}>
                   <li>Git & GitHub</li>
                   <li>Vite</li>
                   <li>Figma</li>
-                  <li>REST APIs</li>
                 </ul>
               </div>
             </div>

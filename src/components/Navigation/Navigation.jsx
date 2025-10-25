@@ -18,7 +18,7 @@ export function Navigation({
     section === 'highlights' ? 'highlights' : section;
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed backdrop-blur-[20px] top-0 w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 ${
       isScrolled
         ? theme === 'dark' ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
         : 'bg-transparent'
@@ -35,12 +35,12 @@ export function Navigation({
             </span>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 ">
             {sections.map((section) => (
               <button
                 key={section}
                 onClick={() => onScrollToSection(section)}
-                className={`capitalize transition-colors ${
+                className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] ${
                   activeSection === section
                     ? isScrolled
                       ? theme === 'dark' ? `${colors.darkText} font-semibold` : `${colors.text} font-semibold`
@@ -82,7 +82,7 @@ export function Navigation({
       </div>
 
       {isMenuOpen && (
-        <div className={`md:hidden shadow-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-white'}`}>
+        <div className={`md:hidden shadow-lg bg-opacity-15 backdrop-blur-[20px] ${theme === 'dark' ? 'bg-slate-800' : 'bg-white'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
             {sections.map((section) => (
               <button

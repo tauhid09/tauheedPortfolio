@@ -18,14 +18,16 @@ function App() {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'bg-black' : 'bg-slate-50'
       }`}>
-      <Navigation
-        theme={theme}
-        colors={colors}
-        isScrolled={isScrolled}
-        activeSection={activeSection}
-        onToggleTheme={toggleTheme}
-        onScrollToSection={scrollToSection}
-      />
+      <div className='flex justify-center' >
+        <Navigation
+          theme={theme}
+          colors={colors}
+          isScrolled={isScrolled}
+          activeSection={activeSection}
+          onToggleTheme={toggleTheme}
+          onScrollToSection={scrollToSection}
+        />
+      </div>
       <div>
         <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
           <LiquidEther
