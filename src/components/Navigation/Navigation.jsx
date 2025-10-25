@@ -18,10 +18,10 @@ export function Navigation({
     section === 'highlights' ? 'highlights' : section;
 
   return (
-    <nav className={`fixed backdrop-blur-[20px] top-0 w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 ${
+    <nav className={`fixed backdrop-blur-[20px] top-0 w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-300 ${
       isScrolled
         ? theme === 'dark' ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
-        : 'bg-transparent'
+        : ''
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
