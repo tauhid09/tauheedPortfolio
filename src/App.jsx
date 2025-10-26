@@ -16,6 +16,7 @@ function App() {
   const colors = colorThemes[colorTheme].light;
 
   return (
+    
     <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'bg-black' : 'bg-slate-50'
       }`}>
       <div className='flex justify-center' >
@@ -28,6 +29,9 @@ function App() {
           onScrollToSection={scrollToSection}
         />
       </div>
+      {/* <div className='w-[45px] h-[45px] fixed top-[95%] right-[0%] translate-x-[-50%] translate-y-[-50%] z-20 cursor-pointer' onClick={() => scrollToSection('home')}>
+        <img src="/src/assests/upper_arrow.png" alt="Scroll to top" className="w-full h-full object-contain" />
+      </div> */}
       <div>
         <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
           <LiquidEther
