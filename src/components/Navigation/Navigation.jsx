@@ -82,8 +82,8 @@ export function Navigation({
       </div>
 
       {isMenuOpen && (
-        <div className={`md:hidden shadow-lg bg-opacity-15 backdrop-blur-[20px] ${theme === 'dark' ? 'bg-slate-800' : 'bg-white'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className={`md:hidden shadow-lg bg-opacity-15 backdrop-blur-[20px] bg-transparent  ${theme === 'dark' ? 'bg-slate-800' : 'bg-white'}`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 ">
             {sections.map((section) => (
               <button
                 key={section}
