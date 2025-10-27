@@ -5,7 +5,7 @@ import { Highlights } from './components/Highlights/Highlights';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { useTheme, useScrollAnimation } from './hooks';
-import { colorThemes, projects, certificates, education } from './data';
+import { colorThemes, projects, certificates, education, achievements } from './data';
 import LiquidEther from './components/Hero/LiquidEnter';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
@@ -77,6 +77,7 @@ function App() {
         projects={projects}
         certificates={certificates}
         education={education}
+        achievements={achievements}
       />
 
       <Contact

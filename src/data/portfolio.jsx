@@ -6,6 +6,13 @@ import metaCert from './images/meta-cert.png';
 import udemyCert from './images/udemy-cert.png';
 import fccCert from './images/fcc-cert.png';
 
+// Add achievements images
+import achievement1 from '../assests/achivement_images/img-1.jpg';
+import achievement2 from '../assests/achivement_images/img-2.jpg';
+import achievement3 from '../assests/achivement_images/img-3.jpg';
+import achievement4 from '../assests/achivement_images/img-4.jpg';
+import achievement5 from '../assests/achivement_images/img-5.jpg';
+
 export const education = [
 	{
 		year: '2020-21',
@@ -71,5 +78,23 @@ export const certificates = [
 		issuer: 'Cisco Networking Academy',
 		date: '2023',
 		image: fccCert
+	}
+];
+
+export const achievements = [
+	{
+		image: achievement1,
+	},
+	{
+		image: achievement2,
+	},
+	{
+		image: achievement3,
+	},
+	{
+		image: achievement4,
+	},
+	{
+		image: achievement5,
 	}
 ];
