@@ -44,14 +44,14 @@ export function Achievements({ theme, colors, achievements }) {
       }`}>Achievements</h3>
       
       {/* Swiper Slider with 3D Coverflow Effect */}
-      <div className="relative h-80 mx-auto max-w-4xl">
+      <div className="relative h-80 mx-auto max-w-6xl px-4">
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={'auto'}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 30,
             stretch: 0,
             depth: 100,
             modifier: 1,
@@ -60,6 +60,7 @@ export function Achievements({ theme, colors, achievements }) {
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
+            // reverseDirection: true,
           }}
           loop={true}
           pagination={true}
@@ -69,7 +70,7 @@ export function Achievements({ theme, colors, achievements }) {
           {achievements.map((achievement, index) => (
             <SwiperSlide 
               key={index} 
-              className="!w-64 h-64 rounded-lg overflow-hidden shadow-lg cursor-pointer"
+              className="!w-72 h-64 rounded-lg overflow-hidden shadow-lg cursor-pointer"
               onClick={() => openModal(achievement.image)}
             >
               <img 
