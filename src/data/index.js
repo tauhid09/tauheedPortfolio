@@ -1,2 +1,2 @@
 export { colorThemes } from './colorThemes';
-export { projects, certificates } from './portfolio';
+export { projects, certificates, education } from './portfolio';

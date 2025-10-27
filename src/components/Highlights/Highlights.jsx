@@ -1,8 +1,8 @@
 import { ProjectCard } from './ProjectCard';
 import { CertificateCard } from './CertificateCard';
-// import {Education} from './Eduction';
+import { Education } from './Education';
 
-export function Highlights({ theme, colors, projects, certificates }) {
+export function Highlights({ theme, colors, projects, certificates, education }) {
   return (
     <section id="highlights" className={`py-20 transition-colors duration-300 ${
       theme === 'dark' ? 'bg-slate-900' : 'bg-slate-50'
@@ -16,6 +16,8 @@ export function Highlights({ theme, colors, projects, certificates }) {
             theme === 'dark' ? colors.darkText.replace('text-', 'bg-') : colors.primary
           }`}></div>
         </div>
+
+        <Education theme={theme} colors={colors} education={education} />
 
         <div className="mb-16">
           <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${

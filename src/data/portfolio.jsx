@@ -8,15 +8,21 @@ import fccCert from './images/fcc-cert.png';
 
 export const education = [
 	{
-		year:'2020-21',
+		year: '2020-21',
 		title: 'High School(10th)',
-		school:'DLW Inter College, Varanasi',
+		school: 'DLW Inter College, Varanasi',
 	},
 
 	{
-		year:'2022-23',
-		title:'Intermediate(12th)',
-		school:'DLW Inter College, Varanasi',
+		year: '2022-23',
+		title: 'Intermediate(12th)',
+		school: 'DLW Inter College, Varanasi',
+	},
+
+	{
+		year: '2023-26',
+		title: 'Bachelor of Computer Applications(BCA)',
+		school: 'Kashi Institute of Technology, Varanasi',
 	},
 ]
 
@@ -32,7 +38,7 @@ export const projects = [
 	{
 		title: 'Tourist Website ',
 		description: 'This visually stunning travel website uses beautiful Kashmir imagery to promote clearly priced tour packages, inviting users to connect with experts.',
-		tech: ['JavaScript', 'CSS3', 'HTML5' ],
+		tech: ['JavaScript', 'CSS3', 'HTML5'],
 		image: tourist,
 		link: 'https://tourist-website-gamma-ten.vercel.app/',
 		github: 'https://github.com/tauhid09/Maximtrip' // add github link
