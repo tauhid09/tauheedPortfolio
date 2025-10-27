@@ -5,7 +5,7 @@ import { Achievements } from './Achievements';
 
 export function Highlights({ theme, colors, projects, certificates, education, achievements }) {
   return (
-    <section id="highlights" className={`py-20 transition-colors duration-300 ${theme === 'dark' ? 'bg-slate-900' : 'bg-slate-50'
+    <section id="highlights" className={`py-20 transition-colors duration-300 ${theme === 'dark' ? 'bg-slate-900' : 'bg-slate-200'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
