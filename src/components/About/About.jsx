@@ -36,9 +36,9 @@ export function About({ theme, colors }) {
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
                 }`}>
-                <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+                <h3 className={`font-extrabold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
                   }`}>LANGUAGE</h3>
-                <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
+                <ul className={`space-y-1 cursor-pointer ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
                   }`}>
                   <li>C</li>
                   <li>C++</li>
@@ -47,9 +47,9 @@ export function About({ theme, colors }) {
               </div>
               <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
                 }`}>
-                <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+                <h3 className={`font-extrabold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
                   }`}>SKILLS</h3>
-                <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
+                <ul className={`space-y-1 cursor-pointer ${theme === 'dark' ? 'text-slate-300 ' : 'text-slate-600'
                   }`}>
                   <li>ReactJS</li>
                   <li>HTML5 & CSS3</li>
@@ -59,7 +59,7 @@ export function About({ theme, colors }) {
               </div>
               <div className={`p-4 rounded-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-gray-200'
                 }`}>
-                <h3 className={`font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+                <h3 className={`font-extrabold mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
                   }`}>TOOLS</h3>
                 <ul className={`space-y-1 ${theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
                   }`}>

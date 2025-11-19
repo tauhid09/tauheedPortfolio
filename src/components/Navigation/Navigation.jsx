@@ -18,7 +18,7 @@ export function Navigation({
     section === 'highlights' ? 'highlights' : section;
 
   return (
-    <nav className={`fixed backdrop-blur-[20px] top-0 w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-300 ${
+    <nav className={`fixed backdrop-blur-[20px] top-[0%] w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-300 ${
       isScrolled
         ? theme === 'dark' ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
         : ''
