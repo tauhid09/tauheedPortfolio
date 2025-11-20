@@ -48,7 +48,9 @@ export function Highlights({ theme, colors, projects, certificates, education, a
           </div>
         </div>
 
-        <div style={{ width: '100%', height: '500px', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ width: '100%', height: '400px', position: 'relative', overflow: 'hidden' }}>
+          <h3 className={`text-2xl font-bold mt-20 text-center scroll-animate font-sans ${isDark ? 'text-white' : 'text-slate-900'
+            }`}>Achievements</h3>
           <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} scrollEase={0.04} />
         </div>
       </div>
