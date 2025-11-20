@@ -6,9 +6,7 @@ export function ProjectCard({ project, theme, colors }) {
   
   return (
     <div
-      className={`rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group scroll-animate ${
-        isDark ? 'bg-slate-800 bg-opacity-70' : 'bg-white bg-opacity-70'
-      }`}
+      className={`glass-morphism-card glass-morphism-hover transform hover:-translate-y-2 group scroll-animate`}
     >
       <div className="overflow-hidden">
         <img

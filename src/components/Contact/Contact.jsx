@@ -28,11 +28,7 @@ export function Contact({ theme, colors }) {
               href="https://github.com/tauhid09"
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center gap-3 p-4 sm:p-6 rounded-lg transition-all hover:scale-110 ${
-                isDark
-                  ? `bg-slate-700 bg-opacity-70 text-slate-300 ${colors.hoverdarkGithub}`
-                  : `bg-slate-50 bg-opacity-70 text-slate-600 ${colors.hoverGithub}`
-              } w-40`}
+              className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Github className="w-10 h-10 sm:w-12 sm:h-12 " />
               <span className="font-medium text-base sm:text-lg">GitHub</span>
@@ -42,11 +38,7 @@ export function Contact({ theme, colors }) {
               href="https://www.linkedin.com/in/mohd-tauheed-ansari/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center gap-3 p-4 sm:p-6 rounded-lg transition-all hover:scale-110 ${
-                isDark
-                  ? `bg-slate-700 bg-opacity-70 text-slate-300 ${colors.hoverdarklinkedin}`
-                  : `bg-slate-50 bg-opacity-70 text-slate-600 ${colors.hoverlinkedin}`
-              } w-40`}
+              className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Linkedin className="w-10 h-10 sm:w-12 sm:h-12" />
               <span className="font-medium text-base sm:text-lg">LinkedIn</span>
@@ -54,11 +46,7 @@ export function Contact({ theme, colors }) {
 
             <a
               href="mailto:mohdtauheedansari879@gmail.com"
-              className={`flex flex-col items-center gap-3 p-4 sm:p-6 rounded-lg transition-all hover:scale-110 ${
-                isDark
-                  ? `bg-slate-700 bg-opacity-70 text-slate-300 ${colors.hoverdarkmail}`
-                  : `bg-slate-50 bg-opacity-70 text-slate-600 ${colors.hovermail}`
-              } w-40`}
+              className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Mail className="w-10 h-10 sm:w-12 sm:h-12" />
               <span className="font-medium text-base sm:text-lg">Email</span>

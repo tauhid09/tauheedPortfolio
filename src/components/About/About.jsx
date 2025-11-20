@@ -36,8 +36,7 @@ export function About({ theme, colors }) {
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className={`p-4 rounded-lg ${isDark ? 'bg-slate-700 bg-opacity-70' : 'bg-gray-200 bg-opacity-70'
-                }`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>LANGUAGE</h3>
                 <ul className={`space-y-1 cursor-pointer ${isDark ? 'text-slate-300' : 'text-slate-600'
@@ -47,8 +46,7 @@ export function About({ theme, colors }) {
                   <li>JAVA</li>
                 </ul>
               </div>
-              <div className={`p-4 rounded-lg ${isDark ? 'bg-slate-700 bg-opacity-70' : 'bg-gray-200 bg-opacity-70'
-                }`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>SKILLS</h3>
                 <ul className={`space-y-1 cursor-pointer ${isDark ? 'text-slate-300 ' : 'text-slate-600'
@@ -59,8 +57,7 @@ export function About({ theme, colors }) {
                   <li>JavaScript ES6+</li>
                 </ul>
               </div>
-              <div className={`p-4 rounded-lg ${isDark ? 'bg-slate-700 bg-opacity-70' : 'bg-gray-200 bg-opacity-70'
-                }`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>TOOLS</h3>
                 <ul className={`space-y-1 ${isDark ? 'text-slate-300' : 'text-slate-600'

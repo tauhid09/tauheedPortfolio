@@ -4,9 +4,8 @@ export function CertificateCard({ certificate, theme, colors }) {
   
   return (
     <div
-      className={`border rounded-xl overflow-hidden shadow-md transition duration-300 scroll-animate flex flex-col
-        hover:scale-[1.03] hover:shadow-2xl
-        ${isDark ? 'bg-slate-800 bg-opacity-70 border-slate-700' : 'bg-white bg-opacity-70 border-slate-200'}
+      className={`glass-morphism-card glass-morphism-hover flex flex-col
+        hover:scale-[1.03]
       `}
       style={{ willChange: 'transform' }}
     >

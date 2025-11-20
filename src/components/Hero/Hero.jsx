@@ -10,7 +10,7 @@ export function Hero({ theme, colors, onScrollToSection }) {
         id="home"
         className="min-h-screen flex items-center justify-center relative bg-transparent"
       >
-        <div className="absolute inset-0 bg-transparent"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-in">
             <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 ${isDark ? 'text-white' : 'text-slate-900'
@@ -24,16 +24,18 @@ export function Hero({ theme, colors, onScrollToSection }) {
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               <button
                 onClick={() => onScrollToSection('highlights')}
-                className={`px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg ${isDark
-                  ? `text-white ${colors.darkPrimary} ${colors.darkHover}`
-                  : `text-white ${colors.primary} ${colors.hover}`
+                className={`px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg ${
+                  isDark
+                    ? `text-white ${colors.darkPrimary} ${colors.darkHover}`
+                    : `text-white ${colors.primary} ${colors.hover}`
                   }`}
               >
                 View My Work
               </button>
               <button
                 onClick={() => onScrollToSection('contact')}
-                className={`px-8 py-3 rounded-lg font-semibold text-white hover:transition-all transform hover:scale-105 shadow-lg ${isDark ? 'bg-red-600 hover:bg-red-700' : 'bg-red-700 hover:bg-red-600'
+                className={`px-8 py-3 rounded-lg font-semibold text-white hover:transition-all transform hover:scale-105 shadow-lg ${
+                  isDark ? 'bg-red-600 hover:bg-red-700' : 'bg-red-700 hover:bg-red-600'
                   }`}
               >
                 Get In Touch
@@ -41,7 +43,8 @@ export function Hero({ theme, colors, onScrollToSection }) {
               <a
                 target='_blank'
                 href='https://drive.google.com/file/d/1BOOw8T7xaZwZDHbGSB71dSjIOFfNJWqx/view?usp=drive_link'
-                className={`px-8 py-3 text-white rounded-lg font-semibold hover:transition-all transform hover:scale-105 shadow-lg ${isDark ? 'bg-green-600 hover:bg-green-700 ' : 'bg-green-700 hover:bg-green-600'
+                className={`px-8 py-3 text-white rounded-lg font-semibold hover:transition-all transform hover:scale-105 shadow-lg ${
+                  isDark ? 'bg-green-600 hover:bg-green-700 ' : 'bg-green-700 hover:bg-green-600'
                   } inline-block`}
               >
                 Download Resume

@@ -43,6 +43,18 @@ html.dark {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r;
   }
+  
+  .glass-morphism {
+    @apply backdrop-blur-lg bg-white/30 border border-white/50 dark:bg-slate-800/30 dark:border-slate-700/50;
+  }
+  
+  .glass-morphism-card {
+    @apply glass-morphism rounded-lg shadow-lg;
+  }
+  
+  .glass-morphism-hover {
+    @apply hover:shadow-xl transition-all duration-300;
+  }
 }
 
 @keyframes fadeInUp {
