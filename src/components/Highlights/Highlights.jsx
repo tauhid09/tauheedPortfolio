@@ -7,7 +7,7 @@ export function Highlights({ theme, colors, projects, certificates, education, a
   const isDark = true;
 
   return (
-    <section id="highlights" className={`py-20 transition-colors duration-300 bg-transparent mx-4 w-[95%] shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] p-10 rounded-[15px] `}>
+    <section id="highlights" className={`py-20 transition-colors duration-300 bg-transparent mx-4 w-[95%] shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] p-10 rounded-[15px] backdrop-blur-[20px] `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
           <h2 className={`text-4xl font-bold mb-4 font-sans ${isDark ? 'text-white' : 'text-slate-900'

@@ -12,7 +12,7 @@ export function Hero({ theme, colors, onScrollToSection }) {
       >
         <div className="absolute inset-0 bg-black bg-opacity-[-0.1]"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-fade-in backdrop-blur-sm bg-black/10 shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] rounded-[15px] p-8">
+          <div className="animate-fade-in  bg-black/10 shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] rounded-[15px] p-8 backdrop-blur-[20px]">
             <h1 className={`text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 tracking-tight ${isDark ? 'text-white' : 'text-slate-900'
               }`}>
               I'm Tauheed

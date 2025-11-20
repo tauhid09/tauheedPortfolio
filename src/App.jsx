@@ -25,7 +25,7 @@ function App() {
           rotation={150}
           speed={1}
           scale={4}
-          frequency={0.2}
+          frequency={2.8}
           warpStrength={1.2}
           mouseInfluence={1}
           parallax={0.6}
