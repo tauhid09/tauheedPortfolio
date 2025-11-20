@@ -4,23 +4,23 @@ import { Education } from './Education';
 import { Achievements } from './Achievements';
 
 export function Highlights({ theme, colors, projects, certificates, education, achievements }) {
+  // Force dark theme since light mode is disabled
+  const isDark = true;
+  
   return (
-    <section id="highlights" className={`py-20 transition-colors duration-300 ${theme === 'dark' ? 'bg-slate-900' : 'bg-slate-200'
-      }`}>
+    <section id="highlights" className={`py-20 transition-colors duration-300 bg-transparent`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className={`text-4xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+          <h2 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-slate-900'
             }`}>Highlights</h2>
-          <div className={`w-20 h-1 mx-auto ${theme === 'dark' ? colors.darkText.replace('text-', 'bg-') : colors.primary
+          <div className={`w-20 h-1 mx-auto ${isDark ? colors.darkText.replace('text-', 'bg-') : colors.primary
             }`}></div>
         </div>
 
         <Education theme={theme} colors={colors} education={education} />
 
-
-
         <div className="mb-16">
-          <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+          <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${isDark ? 'text-white' : 'text-slate-900'
             }`}>Featured Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
@@ -35,7 +35,7 @@ export function Highlights({ theme, colors, projects, certificates, education, a
         </div>
 
         <div>
-          <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${theme === 'dark' ? 'text-white' : 'text-slate-900'
+          <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${isDark ? 'text-white' : 'text-slate-900'
             }`}>Certificates</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {certificates.map((cert, index) => (

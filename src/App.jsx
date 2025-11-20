@@ -6,19 +6,34 @@ import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
 import { useTheme, useScrollAnimation } from './hooks';
 import { colorThemes, projects, certificates, education, achievements } from './data';
-import LiquidEther from './components/Hero/LiquidEnter';
+import ColorBends from './components/Hero/ColorBends';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const { theme, colorTheme, toggleTheme } = useTheme();
   const { isScrolled, activeSection, scrollToSection } = useScrollAnimation();
 
+  // Always use dark theme styling since light mode is disabled
   const colors = colorThemes[colorTheme].light;
 
   return (
-    
-    <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'bg-black' : 'bg-slate-50'
-      }`}>
+    <div className={`min-h-screen duration-300 bg-transparent`}>
+      {/* Global ColorBends background */}
+      <div className="fixed inset-0 z-0">
+        <ColorBends
+          colors={["#FF0000", "#00FF00", "#0000FF"]}
+          rotation={150}
+          speed={1}
+          scale={4}
+          frequency={0.2}
+          warpStrength={1.2}
+          mouseInfluence={1}
+          parallax={0.6}
+          noise={0.08}
+          transparent={false}
+        />
+      </div>
+      
       <div className='flex justify-center' >
         <Navigation
           theme={theme}
@@ -29,63 +44,43 @@ function App() {
           onScrollToSection={scrollToSection}
         />
       </div>
-      {/* <div className='w-[45px] h-[45px] fixed top-[95%] right-[0%] translate-x-[-50%] translate-y-[-50%] z-20 cursor-pointer' onClick={() => scrollToSection('home')}>
-        <img src="/src/assests/upper_arrow.png" alt="Scroll to top" className="w-full h-full object-contain" />
-      </div> */}
-      <div>
-        <div style={{ width: '100%', height: '100vh', position: 'absolute' }}>
-          <LiquidEther
-            theme={theme}
-            colors={
-              theme === 'dark'
-                ? ['#FFFFFF', '#87FCFF', '#87FCFF'] // dark theme colors
-                : ['#c7c5c5', '#c7c5c5', '#c7c5c5'] // light theme colors
-            }
-            mouseForce={20}
-            cursorSize={100}
-            isViscous={false}
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.7}
-            isBounce={false}
-            autoDemo={true}
-            autoSpeed={0.5}
-            autoIntensity={2.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-          />
-        </div>
-        <div>
+      
+      <div className="relative z-10">
+        <div id="home-section">
           <Hero
             theme={theme}
             colors={colors}
             onScrollToSection={scrollToSection}
           />
         </div>
+
+        <div id="about-section">
+          <About
+            theme={theme}
+            colors={colors}
+          />
+        </div>
+
+        <div id="highlights-section">
+          <Highlights
+            theme={theme}
+            colors={colors}
+            projects={projects}
+            certificates={certificates}
+            education={education}
+            achievements={achievements}
+          />
+        </div>
+
+        <div id="contact-section">
+          <Contact
+            theme={theme}
+            colors={colors}
+          />
+        </div>
+
+        <Footer theme={theme} />
       </div>
-
-      <About
-        theme={theme}
-        colors={colors}
-      />
-
-      <Highlights
-        theme={theme}
-        colors={colors}
-        projects={projects}
-        certificates={certificates}
-        education={education}
-        achievements={achievements}
-      />
-
-      <Contact
-        theme={theme}
-        colors={colors}
-      />
-
-      <Footer theme={theme} />
     </div>
   );
 }

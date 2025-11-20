@@ -17,10 +17,13 @@ export function Navigation({
   const getSectionLabel = (section) =>
     section === 'highlights' ? 'highlights' : section;
 
+  // Force dark theme since light mode is disabled
+  const isDark = true;
+
   return (
-    <nav className={`fixed backdrop-blur-[20px] top-[0%] w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-300 ${
+    <nav className={`fixed backdrop-blur-[20px] top-[0%] w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-800 shadow-[0_0_3px_2px_rgba(0,0,0,0.1)] ${
       isScrolled
-        ? theme === 'dark' ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
+        ? isDark ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
         : ''
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,8 +31,8 @@ export function Navigation({
           <div className="flex-shrink-0">
             <span className={`text-2xl font-bold transition-colors ${
               isScrolled
-                ? theme === 'dark' ? 'text-white' : 'text-slate-800'
-                : theme === 'dark' ? 'text-white' : 'text-slate-900'
+                ? isDark ? 'text-white' : 'text-slate-800'
+                : isDark ? 'text-white' : 'text-slate-900'
             }`}>
               Portfolio
             </span>
@@ -43,11 +46,11 @@ export function Navigation({
                 className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] ${
                   activeSection === section
                     ? isScrolled
-                      ? theme === 'dark' ? `${colors.darkText} font-semibold` : `${colors.text} font-semibold`
-                      : theme === 'dark' ? 'text-white font-semibold' : 'text-slate-900 font-semibold'
+                      ? isDark ? `${colors.darkText} font-semibold` : `${colors.text} font-semibold`
+                      : isDark ? 'text-white font-semibold' : 'text-slate-900 font-semibold'
                     : isScrolled
-                      ? theme === 'dark' ? `text-slate-300 ${colors.darkHoverText}` : `text-slate-600 ${colors.hoverText}`
-                      : theme === 'dark' ? 'text-white/80 hover:text-white' : 'text-slate-700 hover:text-slate-900'
+                      ? isDark ? `text-slate-300 ${colors.darkHoverText}` : `text-slate-600 ${colors.hoverText}`
+                      : isDark ? 'text-white/80 hover:text-white' : 'text-slate-700 hover:text-slate-900'
                 }`}
               >
                 {getSectionLabel(section)}
@@ -71,8 +74,8 @@ export function Navigation({
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-md ${
                 isScrolled
-                  ? theme === 'dark' ? 'text-white' : 'text-slate-800'
-                  : theme === 'dark' ? 'text-white' : 'text-slate-900'
+                  ? isDark ? 'text-white' : 'text-slate-800'
+                  : isDark ? 'text-white' : 'text-slate-900'
               }`}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -82,7 +85,7 @@ export function Navigation({
       </div>
 
       {isMenuOpen && (
-        <div className={`md:hidden shadow-lg bg-opacity-15 backdrop-blur-[20px] bg-transparent  ${theme === 'dark' ? 'bg-slate-800' : 'bg-white'}`}>
+        <div className={`md:hidden shadow-lg bg-opacity-15 backdrop-blur-[20px] bg-transparent  ${isDark ? 'bg-slate-800' : 'bg-white'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 ">
             {sections.map((section) => (
               <button
@@ -92,7 +95,7 @@ export function Navigation({
                   setIsMenuOpen(false);
                 }}
                 className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md capitalize ${
-                  theme === 'dark'
+                  isDark
                     ? `text-slate-200 hover:bg-slate-700 ${colors.darkHoverText}`
                     : `text-slate-700 hover:bg-slate-100 ${colors.hoverText}`
                 }`}

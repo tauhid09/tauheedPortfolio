@@ -1,10 +1,13 @@
 import { ExternalLink, Github } from 'lucide-react';
 
 export function ProjectCard({ project, theme, colors }) {
+  // Force dark theme since light mode is disabled
+  const isDark = true;
+  
   return (
     <div
       className={`rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group scroll-animate ${
-        theme === 'dark' ? 'bg-slate-800' : 'bg-white'
+        isDark ? 'bg-slate-800 bg-opacity-70' : 'bg-white bg-opacity-70'
       }`}
     >
       <div className="overflow-hidden">
@@ -16,17 +19,17 @@ export function ProjectCard({ project, theme, colors }) {
       </div>
       <div className="p-6">
         <h4 className={`text-xl font-bold mb-2 ${
-          theme === 'dark' ? 'text-white' : 'text-slate-900'
+          isDark ? 'text-white' : 'text-slate-900'
         }`}>{project.title}</h4>
         <p className={`mb-4 ${
-          theme === 'dark' ? 'text-slate-300' : 'text-slate-600'
+          isDark ? 'text-slate-300' : 'text-slate-600'
         }`}>{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((tech, idx) => (
             <span
               key={idx}
               className={`px-3 py-1 text-sm rounded-full ${
-                theme === 'dark'
+                isDark
                   ? colors.darkTag
                   : colors.tag
               }`}
@@ -40,7 +43,7 @@ export function ProjectCard({ project, theme, colors }) {
           target="_blank"
           rel="noopener noreferrer"
           className={`inline-flex items-center font-semibold ${
-            theme === 'dark'
+            isDark
               ? `${colors.darkText} hover:${colors.darkText.replace('400', '300')}`
               : `${colors.text} ${colors.hover.replace('bg-', 'hover:text-').replace('hover:', '')}`
           }`}
@@ -53,7 +56,7 @@ export function ProjectCard({ project, theme, colors }) {
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center ml-4 font-semibold ${
-              theme === 'dark'
+              isDark
                 ? `${colors.darkText} hover:text-gray-400`
                 : `${colors.text} hover:text-gray-700`
             }`}

@@ -10,6 +10,9 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 export function Achievements({ theme, colors, achievements }) {
+  // Force dark theme since light mode is disabled
+  const isDark = true;
+  
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openModal = (image) => {
@@ -40,7 +43,7 @@ export function Achievements({ theme, colors, achievements }) {
   return (
     <div className="mt-10 overflow-hidden">
       <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${
-        theme === 'dark' ? 'text-white' : 'text-slate-900'
+        isDark ? 'text-white' : 'text-slate-900'
       }`}>Achievements</h3>
       
       {/* Swiper Slider with 3D Coverflow Effect */}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export function useTheme() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [colorTheme, setColorTheme] = useState('blue');
 
   useEffect(() => {
@@ -9,19 +9,21 @@ export function useTheme() {
     const savedColor = localStorage.getItem('colorTheme');
 
     if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+      // Always set theme to dark regardless of saved value
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      // Ensure dark class is added if no saved theme
+      document.documentElement.classList.add('dark');
     }
     if (savedColor) {
       setColorTheme(savedColor);
     }
   }, []);
 
+  // Remove toggle functionality - always return dark theme
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    // Do nothing - light mode is disabled
   };
 
   const changeColorTheme = (color) => {
