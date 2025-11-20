@@ -8,7 +8,7 @@ export function About({ theme, colors }) {
     <section id="about" className={`py-20 transition-colors duration-300 bg-transparent shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] p-10 rounded-[15px] mx-4 backdrop-blur-[20px]`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className={`text-4xl font-bold mb-4 tracking-tight ${isDark ? 'text-white' : 'text-slate-900'
+          <h2 className={`text-6xl font-bold mb-4 tracking-tight ${isDark ? 'text-white' : 'text-slate-900'
             }`}>About Me</h2>
           <div className={`w-20 h-1 mx-auto ${isDark ? colors.darkText.replace('text-', 'bg-') : colors.primary
             }`}></div>

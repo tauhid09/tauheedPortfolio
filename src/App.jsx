@@ -23,12 +23,12 @@ function App() {
         <ColorBends
           colors={["#FF0000", "#00FF00", "#0000FF"]}
           rotation={150}
-          speed={1}
+          speed={0.47}
           scale={4}
           frequency={2.8}
-          warpStrength={1.2}
+          warpStrength={1}
           mouseInfluence={1}
-          parallax={0.6}
+          parallax={2}
           noise={0.08}
           transparent={false}
         />
