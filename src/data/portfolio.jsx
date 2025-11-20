@@ -1,4 +1,3 @@
-import { Code2, Briefcase, Award } from 'lucide-react';
 import portfolio from './images/img-1.png'
 import tourist from './images/img-2.png'
 import pinterest from './images/img-3.png'
@@ -7,11 +6,11 @@ import udemyCert from './images/udemy-cert.png';
 import fccCert from './images/fcc-cert.png';
 
 // Add achievements images
-import achievement1 from '../assests/achivement_images/img-1.jpg';
-import achievement2 from '../assests/achivement_images/img-2.jpg';
-import achievement3 from '../assests/achivement_images/img-3.jpg';
-import achievement4 from '../assests/achivement_images/img-4.jpg';
-import achievement5 from '../assests/achivement_images/img-5.jpg';
+import achievement1 from '../components/Highlights/achivement_images/img-1.jpg';
+import achievement2 from '../components/Highlights/achivement_images/img-2.jpg';
+import achievement3 from '../components/Highlights/achivement_images/img-3.jpg';
+import achievement4 from '../components/Highlights/achivement_images/img-4.jpg';
+import achievement5 from '../components/Highlights/achivement_images/img-5.jpg';
 
 export const education = [
 	{
@@ -83,18 +82,23 @@ export const certificates = [
 
 export const achievements = [
 	{
-		image: achievement1,
+		title: '',
+		image: achievement1
 	},
 	{
-		image: achievement2,
+		title: '',
+		image: achievement2
 	},
 	{
-		image: achievement3,
+		title: '',
+		image: achievement3
 	},
 	{
-		image: achievement4,
+		title: '',
+		image: achievement4
 	},
 	{
-		image: achievement5,
+		title: '',
+		image: achievement5
 	}
 ];

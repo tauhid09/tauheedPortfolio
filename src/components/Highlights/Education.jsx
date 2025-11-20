@@ -6,7 +6,7 @@ export function Education({ theme, colors, education }) {
   
   return (
     <div className="mb-16">
-      <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate ${
+      <h3 className={`text-2xl font-bold mb-8 text-center scroll-animate font-sans ${
         isDark ? 'text-white' : 'text-slate-900'
       }`}>Education</h3>
       <div className="relative">
@@ -28,13 +28,13 @@ export function Education({ theme, colors, education }) {
             {/* Content */}
             <div className={`ml-8 mr-4 md:ml-0 md:mr-0 md:w-5/12 p-4 md:p-6 glass-morphism-card glass-morphism-hover ${
               index % 2 === 0 ? 'md:mr-auto md:pr-8 md:text-right' : 'md:ml-auto md:pl-8 md:text-left'}`}>
-              <span className={`text-xs md:text-sm font-semibold px-2 py-1 md:px-3 md:py-1 rounded-full ${
+              <span className={`text-xs md:text-sm font-semibold px-2 py-1 md:px-3 md:py-1 rounded-full font-sans ${
                 isDark ? `${colors.darkPrimary} text-white` : `${colors.primary} text-white`
               }`}>{edu.year}</span>
-              <h4 className={`text-lg md:text-xl font-bold mt-2 ${
+              <h4 className={`text-lg md:text-xl font-bold mt-2 font-sans ${
                 isDark ? 'text-white' : 'text-slate-900'
               }`}>{edu.title}</h4>
-              <p className={`mt-1 text-sm md:text-base ${
+              <p className={`mt-1 text-sm md:text-base font-sans ${
                 isDark ? 'text-gray-300' : 'text-gray-600'
               }`}>{edu.school}</p>
             </div>

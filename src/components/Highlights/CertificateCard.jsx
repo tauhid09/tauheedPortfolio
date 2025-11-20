@@ -20,13 +20,13 @@ export function CertificateCard({ certificate, theme, colors }) {
         </div>
       )}
       <div className="flex-1 px-6 pb-6 pt-6 flex flex-col">
-        <h4 className={`font-bold text-lg mb-2 ${
+        <h4 className={`font-bold text-lg mb-2 font-sans ${
           isDark ? 'text-white' : 'text-slate-900'
         }`}>{certificate.title}</h4>
-        <p className={`text-sm mb-1 ${
+        <p className={`text-sm mb-1 font-sans ${
           isDark ? 'text-slate-300' : 'text-slate-600'
         }`}>{certificate.issuer}</p>
-        <p className={`text-xs ${
+        <p className={`text-xs font-sans ${
           isDark ? 'text-slate-400' : 'text-slate-500'
         }`}>{certificate.date}</p>
       </div>

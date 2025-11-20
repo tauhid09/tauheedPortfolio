@@ -16,10 +16,10 @@ export function ProjectCard({ project, theme, colors }) {
         />
       </div>
       <div className="p-6">
-        <h4 className={`text-xl font-bold mb-2 ${
+        <h4 className={`text-xl font-bold mb-2 font-sans ${
           isDark ? 'text-white' : 'text-slate-900'
         }`}>{project.title}</h4>
-        <p className={`mb-4 ${
+        <p className={`mb-4 font-sans ${
           isDark ? 'text-slate-300' : 'text-slate-600'
         }`}>{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">

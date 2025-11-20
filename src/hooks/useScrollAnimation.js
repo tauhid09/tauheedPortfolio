@@ -40,7 +40,14 @@ export function useScrollAnimation() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Custom smooth scrolling with more control
+      const offsetTop = element.offsetTop;
+      const offset = 80; // Adjust this value to account for fixed navigation
+      
+      window.scrollTo({
+        top: offsetTop - offset,
+        behavior: 'smooth'
+      });
     }
   };
 

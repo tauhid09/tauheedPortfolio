@@ -8,13 +8,13 @@ export function Contact({ theme, colors }) {
     <section id="contact" className={`py-20 transition-colors duration-300 bg-transparent`}>
       <div className=" xl:h-[55vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className={`text-4xl font-bold mb-4 ${
+          <h2 className={`text-4xl font-bold mb-4 font-sans ${
             isDark ? 'text-white' : 'text-slate-900'
           }`}>Get In Touch</h2>
           <div className={`w-20 h-1 mx-auto ${
             isDark ? colors.darkText.replace('text-', 'bg-') : colors.primary
           }`}></div>
-          <p className={`mt-8 max-w-2xl mx-auto ${
+          <p className={`mt-8 max-w-2xl mx-auto font-sans ${
             isDark ? 'text-slate-300' : 'text-slate-600'
           }`}>
             I'm always interested in hearing about new projects and opportunities.
@@ -31,7 +31,7 @@ export function Contact({ theme, colors }) {
               className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Github className="w-10 h-10 sm:w-12 sm:h-12 " />
-              <span className="font-medium text-base sm:text-lg">GitHub</span>
+              <span className="font-medium text-base sm:text-lg font-sans">GitHub</span>
             </a>
 
             <a
@@ -41,7 +41,7 @@ export function Contact({ theme, colors }) {
               className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Linkedin className="w-10 h-10 sm:w-12 sm:h-12" />
-              <span className="font-medium text-base sm:text-lg">LinkedIn</span>
+              <span className="font-medium text-base sm:text-lg font-sans">LinkedIn</span>
             </a>
 
             <a
@@ -49,7 +49,7 @@ export function Contact({ theme, colors }) {
               className={`flex flex-col items-center gap-3 p-4 sm:p-6 glass-morphism-card glass-morphism-hover w-40`}
             >
               <Mail className="w-10 h-10 sm:w-12 sm:h-12" />
-              <span className="font-medium text-base sm:text-lg">Email</span>
+              <span className="font-medium text-base sm:text-lg font-sans">Email</span>
             </a>
           </div>
         </div>

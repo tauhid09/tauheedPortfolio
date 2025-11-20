@@ -8,7 +8,7 @@ export function About({ theme, colors }) {
     <section id="about" className={`py-20 transition-colors duration-300 bg-transparent`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className={`text-4xl font-bold mb-4 ${isDark ? 'text-white' : 'text-slate-900'
+          <h2 className={`text-4xl font-bold mb-4 tracking-tight ${isDark ? 'text-white' : 'text-slate-900'
             }`}>About Me</h2>
           <div className={`w-20 h-1 mx-auto ${isDark ? colors.darkText.replace('text-', 'bg-') : colors.primary
             }`}></div>
@@ -23,13 +23,13 @@ export function About({ theme, colors }) {
             />
           </div>
           <div className="space-y-6 scroll-animate">
-            <p className={`text-lg leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-700'
+            <p className={`text-lg leading-relaxed font-sans ${isDark ? 'text-slate-300' : 'text-slate-700'
               }`}>
               Hi, I’m <strong>  Mohd Tauheed Ansari </strong>, a passionate <strong>Front-End Developer</strong> who loves building clean, responsive, and user-friendly web applications.
               I specialize in React.js, Tailwind CSS, and modern JavaScript frameworks, and I’m always eager to learn new technologies.
               I enjoy turning creative ideas into real, interactive experiences on the web.
             </p>
-            <p className={`text-lg leading-relaxed ${isDark ? 'text-slate-300' : 'text-slate-700'
+            <p className={`text-lg leading-relaxed font-sans ${isDark ? 'text-slate-300' : 'text-slate-700'
               }`}>
               Currently, I’m exploring full-stack development and working on projects that improve my problem-solving and design skills.
               I’m always open to collaborations, internships, or exciting new challenges!

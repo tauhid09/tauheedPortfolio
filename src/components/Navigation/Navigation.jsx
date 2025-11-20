@@ -29,7 +29,7 @@ export function Navigation({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className={`text-2xl font-bold transition-colors ${
+            <span className={`text-2xl font-bold transition-colors font-sans ${
               isScrolled
                 ? isDark ? 'text-white' : 'text-slate-800'
                 : isDark ? 'text-white' : 'text-slate-900'
@@ -43,7 +43,7 @@ export function Navigation({
               <button
                 key={section}
                 onClick={() => onScrollToSection(section)}
-                className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] ${
+                className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] font-sans ${
                   activeSection === section
                     ? isScrolled
                       ? isDark ? `${colors.darkText} font-semibold` : `${colors.text} font-semibold`
@@ -94,7 +94,7 @@ export function Navigation({
                   onScrollToSection(section);
                   setIsMenuOpen(false);
                 }}
-                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md capitalize ${
+                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md capitalize font-sans ${
                   isDark
                     ? `text-slate-200 hover:bg-slate-700 ${colors.darkHoverText}`
                     : `text-slate-700 hover:bg-slate-100 ${colors.hoverText}`

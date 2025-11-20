@@ -45,7 +45,7 @@ function App() {
         />
       </div>
       
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col min-h-screen">
         <div id="home-section">
           <Hero
             theme={theme}
@@ -79,7 +79,9 @@ function App() {
           />
         </div>
 
-        <Footer theme={theme} />
+        <div className="mt-auto">
+          <Footer theme={theme} />
+        </div>
       </div>
     </div>
   );

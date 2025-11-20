@@ -5,10 +5,10 @@ export function Footer({ theme }) {
   const isDark = true;
   
   return (
-    <footer className={`py-8 transition-colors duration-300 bg-transparent`}>
+    <footer className={`py-8 transition-colors duration-300 bg-transparent backdrop-blur-[20px] border border-solid border-gray-800 w-[90%] mx-auto rounded-t-[60px] shadow-2xl`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className={isDark ? 'text-slate-500' : 'text-black'}>
+          <p className={`${isDark ? 'text-white' : 'text-black'} font-sans`}>
             &copy; 2025 Portfolio. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">

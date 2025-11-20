@@ -6,7 +6,8 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
-  				'-apple-system',
+          'Space Grotesk', 
+          '-apple-system',
   				'BlinkMacSystemFont',
   				'Segoe UI"',
   				'Roboto',
@@ -16,9 +17,10 @@ export default {
   				'Apple Color Emoji"',
   				'Segoe UI Emoji"',
   				'Segoe UI Symbol"'
-  			],
+        ],
   			mono: [
-  				'ui-monospace',
+          'Inter',
+          'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',
   				'Monaco',
@@ -27,7 +29,7 @@ export default {
   				'Liberation Mono"',
   				'Courier New"',
   				'monospace'
-  			]
+        ]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
