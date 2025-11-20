@@ -17,7 +17,7 @@ function App() {
   const colors = colorThemes[colorTheme].light;
 
   return (
-    <div className={`min-h-screen duration-300 bg-transparent`}>
+    <div className={`min-h-screen duration-300 bg-transparent shadow-inner`}>
       {/* Global ColorBends background */}
       <div className="fixed inset-0 z-0">
         <ColorBends
@@ -46,7 +46,7 @@ function App() {
       </div>
       
       <div className="relative z-10 flex flex-col min-h-screen">
-        <div id="home-section">
+        <div id="home-section" className="py-8">
           <Hero
             theme={theme}
             colors={colors}
@@ -54,14 +54,14 @@ function App() {
           />
         </div>
 
-        <div id="about-section">
+        <div id="about-section" className="py-8 shadow-inner">
           <About
             theme={theme}
             colors={colors}
           />
         </div>
 
-        <div id="highlights-section">
+        <div id="highlights-section" className="py-8 shadow-inner">
           <Highlights
             theme={theme}
             colors={colors}
@@ -72,7 +72,7 @@ function App() {
           />
         </div>
 
-        <div id="contact-section">
+        <div id="contact-section" className="py-8 shadow-inner">
           <Contact
             theme={theme}
             colors={colors}

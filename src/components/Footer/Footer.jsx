@@ -5,7 +5,7 @@ export function Footer({ theme }) {
   const isDark = true;
   
   return (
-    <footer className={`py-8 transition-colors duration-300 bg-transparent backdrop-blur-[20px] border border-solid border-gray-800 w-[90%] mx-auto rounded-t-[60px] shadow-2xl`}>
+    <footer className={`py-8 transition-colors duration-300 bg-transparent backdrop-blur-[20px] w-[85%] mx-auto rounded-t-[60px] shadow-[1px_2px_15px_-3px_rgba(0,0,0,1)]`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className={`${isDark ? 'text-white' : 'text-black'} font-sans`}>

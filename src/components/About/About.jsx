@@ -5,7 +5,7 @@ export function About({ theme, colors }) {
   const isDark = true;
   
   return (
-    <section id="about" className={`py-20 transition-colors duration-300 bg-transparent`}>
+    <section id="about" className={`py-20 transition-colors duration-300 bg-transparent shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] p-10 rounded-[15px] mx-4`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 scroll-animate">
           <h2 className={`text-4xl font-bold mb-4 tracking-tight ${isDark ? 'text-white' : 'text-slate-900'
@@ -36,7 +36,7 @@ export function About({ theme, colors }) {
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover shadow-lg rounded-lg`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>LANGUAGE</h3>
                 <ul className={`space-y-1 cursor-pointer ${isDark ? 'text-slate-300' : 'text-slate-600'
@@ -46,7 +46,7 @@ export function About({ theme, colors }) {
                   <li>JAVA</li>
                 </ul>
               </div>
-              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover shadow-lg rounded-lg`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>SKILLS</h3>
                 <ul className={`space-y-1 cursor-pointer ${isDark ? 'text-slate-300 ' : 'text-slate-600'
@@ -57,7 +57,7 @@ export function About({ theme, colors }) {
                   <li>JavaScript ES6+</li>
                 </ul>
               </div>
-              <div className={`p-4 glass-morphism-card glass-morphism-hover`}>
+              <div className={`p-4 glass-morphism-card glass-morphism-hover shadow-lg rounded-lg`}>
                 <h3 className={`font-extrabold mb-2 ${isDark ? 'text-white' : 'text-slate-900'
                   }`}>TOOLS</h3>
                 <ul className={`space-y-1 ${isDark ? 'text-slate-300' : 'text-slate-600'

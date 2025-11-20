@@ -5,8 +5,8 @@ export function Contact({ theme, colors }) {
   const isDark = true;
   
   return (
-    <section id="contact" className={`py-20 transition-colors duration-300 bg-transparent`}>
-      <div className=" xl:h-[55vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className={`py-20 transition-colors duration-300 bg-transparent mx-4`}>
+      <div className=" xl:h-[55vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] p-10 rounded-[15px]">
         <div className="text-center mb-12 scroll-animate">
           <h2 className={`text-4xl font-bold mb-4 font-sans ${
             isDark ? 'text-white' : 'text-slate-900'

@@ -21,7 +21,7 @@ export function Navigation({
   const isDark = true;
 
   return (
-    <nav className={`fixed backdrop-blur-[20px] top-[0%] w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15 border border-gray-800 shadow-[0_0_3px_2px_rgba(0,0,0,0.1)] ${
+    <nav className={`fixed backdrop-blur-[20px] top-[0%] w-[80%] z-50 transition-all duration-300  m-4 rounded-[30px] bg-opacity-15  shadow-[3px_3px_15px_-3px_rgba(0,0,0,1)] rounded-[15px] ${
       isScrolled
         ? isDark ? 'bg-slate-800 shadow-md' : 'bg-white shadow-md'
         : ''
@@ -29,7 +29,7 @@ export function Navigation({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className={`text-2xl font-bold transition-colors font-sans ${
+            <span className={`text-2xl font-bold transition-colors ${
               isScrolled
                 ? isDark ? 'text-white' : 'text-slate-800'
                 : isDark ? 'text-white' : 'text-slate-900'
@@ -43,7 +43,7 @@ export function Navigation({
               <button
                 key={section}
                 onClick={() => onScrollToSection(section)}
-                className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] font-sans ${
+                className={`capitalize transition-colors bg-opacity-15 backdrop-blur-[20px] ${
                   activeSection === section
                     ? isScrolled
                       ? isDark ? `${colors.darkText} font-semibold` : `${colors.text} font-semibold`
@@ -57,19 +57,19 @@ export function Navigation({
               </button>
             ))}
 
-            <ThemeToggle
+            {/* <ThemeToggle
               theme={theme}
               isScrolled={isScrolled}
               onToggle={onToggleTheme}
-            />
+            /> */}
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle
+            {/* <ThemeToggle
               theme={theme}
               isScrolled={isScrolled}
               onToggle={onToggleTheme}
-            />
+            /> */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-md ${
@@ -94,7 +94,7 @@ export function Navigation({
                   onScrollToSection(section);
                   setIsMenuOpen(false);
                 }}
-                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md capitalize font-sans ${
+                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md capitalize ${
                   isDark
                     ? `text-slate-200 hover:bg-slate-700 ${colors.darkHoverText}`
                     : `text-slate-700 hover:bg-slate-100 ${colors.hoverText}`

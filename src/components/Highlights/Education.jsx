@@ -26,7 +26,7 @@ export function Education({ theme, colors, education }) {
             }`}></div>
             
             {/* Content */}
-            <div className={`ml-8 mr-4 md:ml-0 md:mr-0 md:w-5/12 p-4 md:p-6 glass-morphism-card glass-morphism-hover ${
+            <div className={`ml-8 mr-4 md:ml-0 md:mr-0 md:w-5/12 p-4 md:p-6 glass-morphism-card glass-morphism-hover shadow-lg rounded-lg ${
               index % 2 === 0 ? 'md:mr-auto md:pr-8 md:text-right' : 'md:ml-auto md:pl-8 md:text-left'}`}>
               <span className={`text-xs md:text-sm font-semibold px-2 py-1 md:px-3 md:py-1 rounded-full font-sans ${
                 isDark ? `${colors.darkPrimary} text-white` : `${colors.primary} text-white`
