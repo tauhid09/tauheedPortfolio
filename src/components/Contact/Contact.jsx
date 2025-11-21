@@ -14,7 +14,7 @@ export function Contact({ theme, colors }) {
           <div className={`w-20 h-1 mx-auto ${
             isDark ? colors.darkText.replace('text-', 'bg-') : colors.primary
           }`}></div>
-          <p className={`mt-8 max-w-2xl mx-auto font-sans ${
+          <p className={`text-xl mt-8 max-w-2xl mx-auto font-sans ${
             isDark ? 'text-slate-300' : 'text-slate-600'
           }`}>
             I'm always interested in hearing about new projects and opportunities.

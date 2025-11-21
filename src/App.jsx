@@ -21,7 +21,7 @@ function App() {
       {/* Global ColorBends background */}
       <div className="fixed inset-0 z-0">
         <ColorBends
-          colors={["#FF0000", "#00FF00", "#0000FF"]}
+          colors={["#D9CFC7", "#D9CFC7", "#D9CFC7"]}
           rotation={150}
           speed={0.47}
           scale={4}
@@ -29,7 +29,7 @@ function App() {
           warpStrength={1}
           mouseInfluence={1}
           parallax={2}
-          noise={0.08}
+          noise={0.15}
           transparent={false}
         />
       </div>
